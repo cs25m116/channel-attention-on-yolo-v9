@@ -5,6 +5,7 @@ A Kaggle-style project for converting Pascal VOC annotations into YOLO format an
 ## Project Overview
 
 This repository contains the notebook used to:
+
 - Download Pascal VOC 2007 and 2012 datasets
 - Convert VOC XML annotations into YOLO `.txt` label files
 - Create YOLO dataset configuration files
@@ -59,35 +60,35 @@ The trained YOLO-v9 model with channel attention has been evaluated and visualiz
 
 ![Data preparation overview](screenshots/data-preparation.png)
 
-*Overview of the data preparation pipeline: Pascal VOC dataset conversion, label generation, and YOLO format normalization.*
+_Overview of the data preparation pipeline: Pascal VOC dataset conversion, label generation, and YOLO format normalization._
 
 #### Detection Results
 
 ![Detection sample 1 - Mixed objects](screenshots/detection-sample-1.png)
 
-*Example detection result showing the model identifying multiple object classes in a single image.*
+_Example detection result showing the model identifying multiple object classes in a single image._
 
 ![Detection sample 2 - Vehicle detection](screenshots/detection-sample-2.png)
 
-*Inference sample demonstrating vehicle detection with high confidence scores.*
+_Inference sample demonstrating vehicle detection with high confidence scores._
 
 ![Detection sample 3 - Pedestrian and object detection](screenshots/detection-sample-3.png)
 
-*Multi-class detection example with both person and object detections.*
+_Multi-class detection example with both person and object detections._
 
 ![Detection sample 4 - Complex scene analysis](screenshots/detection-sample-4.png)
 
-*Complex scene with multiple overlapping objects, demonstrating the model's handling of crowded environments.*
+_Complex scene with multiple overlapping objects, demonstrating the model's handling of crowded environments._
 
 #### Model Evaluation Metrics
 
 ![Confusion Matrix - Class-wise performance](screenshots/confusion-matrix.png)
 
-*Confusion matrix displaying per-class accuracy and misclassifications across all 20 Pascal VOC classes.*
+_Confusion matrix displaying per-class accuracy and misclassifications across all 20 Pascal VOC classes._
 
 ![Precision-Recall Curve - Detection threshold analysis](screenshots/pr-curve.png)
 
-*Precision-Recall curve illustrating the model's performance across different confidence thresholds.*
+_Precision-Recall curve illustrating the model's performance across different confidence thresholds._
 
 #### Video Comparison
 
