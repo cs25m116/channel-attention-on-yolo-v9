@@ -17,7 +17,7 @@ This repository contains the notebook used to:
 - `channel-attention-on-yolo-v9.ipynb` - Main notebook with the full data preparation and YOLO-v9 setup workflow
 - `README.md` - Project documentation
 - `screenshots/` - Result images and visualizations
-- `YOLO v9.mp4` - Side-by-side prediction video showing YOLOv9 and YOLOv9 with channel attention
+  - `screenshots/YOLO v9.mp4` - Side-by-side prediction video showing YOLOv9 and YOLOv9 with channel attention
 - `.git/` - Git repository metadata
 
 ## Key Steps
@@ -92,7 +92,7 @@ _Precision-Recall curve illustrating the model's performance across different co
 
 #### Video Comparison
 
-**`YOLO v9.mp4`** — Side-by-side comparison video showing predictions from standard YOLOv9 and YOLOv9 with channel attention improvements, highlighting the performance benefits of the channel attention mechanism.
+[**YOLO v9.mp4**](screenshots/YOLO%20v9.mp4) — Side-by-side comparison video showing predictions from standard YOLOv9 and YOLOv9 with channel attention improvements, highlighting the performance benefits of the channel attention mechanism.
 
 ## Notes
 
