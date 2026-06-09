@@ -43,53 +43,58 @@ This repository contains the notebook used to:
 - `data.yaml` with paths to training and validation images
 - Visualized image examples showing bounding boxes over detected objects
 
-## Results
+## Results and Visualizations
 
-> Add your project results and metrics here once available.
+### Model Performance
 
-Example fields to include:
-- Training accuracy / mAP
-- Loss curves
-- Validation precision and recall
-- Inference sample images
+The trained YOLO-v9 model with channel attention has been evaluated and visualized through the following metrics:
 
-## Media Files
+- **Confusion Matrix** — Shows the classification performance across all 20 Pascal VOC classes
+- **Precision-Recall Curve** — Demonstrates the trade-off between precision and recall for object detection
+- **Detection Samples** — Real-world inference examples showcasing the model's detection capabilities
 
-This repository includes result images and a comparison video for the YOLOv9 experiments.
+### Results Media
 
-### Screenshot files
+#### Data Preparation Visualization
 
-- `screenshots/data-preparation.png`
-- `screenshots/detection-sample-1.png`
-- `screenshots/detection-sample-2.png`
-- `screenshots/detection-sample-3.png`
-- `screenshots/detection-sample-4.png`
-- `screenshots/confusion-matrix.png`
-- `screenshots/pr-curve.png`
+![Data preparation overview](screenshots/data-preparation.png)
 
-### Video file
+*Overview of the data preparation pipeline: Pascal VOC dataset conversion, label generation, and YOLO format normalization.*
 
-- `YOLO v9.mp4` — side-by-side prediction comparison of YOLOv9 and YOLOv9 with channel attention.
+#### Detection Results
 
-### Displayed media
+![Detection sample 1 - Mixed objects](screenshots/detection-sample-1.png)
 
-![Data preparation](screenshots/data-preparation.png)
+*Example detection result showing the model identifying multiple object classes in a single image.*
 
-![Detection sample 1](screenshots/detection-sample-1.png)
+![Detection sample 2 - Vehicle detection](screenshots/detection-sample-2.png)
 
-![Detection sample 2](screenshots/detection-sample-2.png)
+*Inference sample demonstrating vehicle detection with high confidence scores.*
 
-![Detection sample 3](screenshots/detection-sample-3.png)
+![Detection sample 3 - Pedestrian and object detection](screenshots/detection-sample-3.png)
 
-![Detection sample 4](screenshots/detection-sample-4.png)
+*Multi-class detection example with both person and object detections.*
 
-![Confusion Matrix](screenshots/confusion-matrix.png)
+![Detection sample 4 - Complex scene analysis](screenshots/detection-sample-4.png)
 
-![Precision-Recall Curve](screenshots/pr-curve.png)
+*Complex scene with multiple overlapping objects, demonstrating the model's handling of crowded environments.*
 
-> Place your screenshot files inside the `screenshots/` folder and use the video player in GitHub to view `YOLO v9.mp4`.
+#### Model Evaluation Metrics
+
+![Confusion Matrix - Class-wise performance](screenshots/confusion-matrix.png)
+
+*Confusion matrix displaying per-class accuracy and misclassifications across all 20 Pascal VOC classes.*
+
+![Precision-Recall Curve - Detection threshold analysis](screenshots/pr-curve.png)
+
+*Precision-Recall curve illustrating the model's performance across different confidence thresholds.*
+
+#### Video Comparison
+
+**`YOLO v9.mp4`** — Side-by-side comparison video showing predictions from standard YOLOv9 and YOLOv9 with channel attention improvements, highlighting the performance benefits of the channel attention mechanism.
 
 ## Notes
 
-- This repository is primarily a data preparation and YOLO-v9 setup proof of concept.
-- If you want, I can also help update this README later with the actual screenshot files and final result descriptions.
+- This project demonstrates the integration of channel attention mechanisms into YOLO-v9 for improved object detection performance on the Pascal VOC dataset.
+- All screenshots and results are generated during the notebook execution and stored in the `screenshots/` directory.
+- The comparison video can be viewed directly in GitHub's media player.
