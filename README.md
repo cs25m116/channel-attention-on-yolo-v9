@@ -13,7 +13,7 @@ This repository contains the notebook used to:
 
 ## Repository Contents
 
-- `notebook2959095597.ipynb` - Main notebook with the full data preparation and YOLO-v9 setup workflow
+- `channel-attention-on-yolo-v9.ipynb` - Main notebook with the full data preparation and YOLO-v9 setup workflow
 - `README.md` - Project documentation
 - `screenshots/` - Result images and visualizations
 - `YOLO v9.mp4` - Side-by-side prediction video showing YOLOv9 and YOLOv9 with channel attention
